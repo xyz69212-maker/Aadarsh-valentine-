@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aadarsh's Love Mode 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #140014, #2b002b, #400040);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 80px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff66b2; }
+    to { text-shadow: 0 0 25px #ff3399; }
+}
+
+.subtitle {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+button {
+    background: #ff66b2;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3399;
+    transform: scale(1.05);
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 25px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    color: #ff66b2;
+    animation: float 6s linear infinite;
+    font-size: 20px;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); opacity: 1; }
+    to { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<iframe width="0" height="0" 
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+frameborder="0" allow="autoplay">
+</iframe>
+
+<div class="section">
+    <h1>🎮 Player Aadarsh Sharma</h1>
+    <p class="subtitle">You’ve unlocked Love Mode 💖</p>
+    <button onclick="start()">Enter</button>
+</div>
+
+<div id="content" class="hidden">
+
+<div class="section">
+    <div class="card">
+        <h2>Why You're My Favorite Person</h2>
+        <p>🎮 Gamer with main character energy</p>
+        <p>😌 Soft romantic soul</p>
+        <p>😆 Chaotic but in the cutest way</p>
+        <p>🧠 Overthinks but cares deeply</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Stress Relief Mode 💌</h2>
+        <button onclick="comfort()">Click When You're Overthinking</button>
+        <p id="comfortText" class="hidden">
+            Aadarsh…  
+            You don’t have to prove your worth.  
+            You don’t have to carry everything alone.  
+            You are enough.  
+            And if the world feels heavy,  
+            I will hold it with you.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Hidden Love Letter 💖</h2>
+        <button onclick="revealLetter()">Open Secret Message</button>
+        <p id="letter" class="hidden">
+            Jo tum mere ho…  
+            toh mujhe sach mein duniya se kuch nahi chahiye.  
+            Just you. Always you.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<script>
+function start() {
+    document.getElementById("content").classList.remove("hidden");
+}
+
+function comfort() {
+    document.getElementById("comfortText").classList.remove("hidden");
+}
+
+function revealLetter() {
+    document.getElementById("letter").classList.remove("hidden");
+}
+
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 500);
+</script>
+
+</body>
+  </html><!DOCTYPE html>
+<html>
+<head>
+<title>Aadarsh's Love Mode 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #140014, #2b002b, #400040);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 80px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff66b2; }
+    to { text-shadow: 0 0 25px #ff3399; }
+}
+
+.subtitle {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+button {
+    background: #ff66b2;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3399;
+    transform: scale(1.05);
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 25px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    color: #ff66b2;
+    animation: float 6s linear infinite;
+    font-size: 20px;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); opacity: 1; }
+    to { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<iframe width="0" height="0" 
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+frameborder="0" allow="autoplay">
+</iframe>
+
+<div class="section">
+    <h1>🎮 Player Aadarsh Sharma</h1>
+    <p class="subtitle">You’ve unlocked Love Mode 💖</p>
+    <button onclick="start()">Enter</button>
+</div>
+
+<div id="content" class="hidden">
+
+<div class="section">
+    <div class="card">
+        <h2>Why You're My Favorite Person</h2>
+        <p>🎮 Gamer with main character energy</p>
+        <p>😌 Soft romantic soul</p>
+        <p>😆 Chaotic but in the cutest way</p>
+        <p>🧠 Overthinks but cares deeply</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Stress Relief Mode 💌</h2>
+        <button onclick="comfort()">Click When You're Overthinking</button>
+        <p id="comfortText" class="hidden">
+            Aadarsh…  
+            You don’t have to prove your worth.  
+            You don’t have to carry everything alone.  
+            You are enough.  
+            And if the world feels heavy,  
+            I will hold it with you.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Hidden Love Letter 💖</h2>
+        <button onclick="revealLetter()">Open Secret Message</button>
+        <p id="letter" class="hidden">
+            Jo tum mere ho…  
+            toh mujhe sach mein duniya se kuch nahi chahiye.  
+            Just you. Always you.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<script>
+function start() {
+    document.getElementById("content").classList.remove("hidden");
+}
+
+function comfort() {
+    document.getElementById("comfortText").classList.remove("hidden");
+}
+
+function revealLetter() {
+    document.getElementById("letter").classList.remove("hidden");
+}
+
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 500);
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>Aadarsh's Love Mode 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #140014, #2b002b, #400040);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 80px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff66b2; }
+    to { text-shadow: 0 0 25px #ff3399; }
+}
+
+.subtitle {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+button {
+    background: #ff66b2;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3399;
+    transform: scale(1.05);
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 25px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    color: #ff66b2;
+    animation: float 6s linear infinite;
+    font-size: 20px;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); opacity: 1; }
+    to { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<iframe width="0" height="0" 
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+frameborder="0" allow="autoplay">
+</iframe>
+
+<div class="section">
+    <h1>🎮 Player Aadarsh Sharma</h1>
+    <p class="subtitle">You’ve unlocked Love Mode 💖</p>
+    <button onclick="start()">Enter</button>
+</div>
+
+<div id="content" class="hidden">
+
+<div class="section">
+    <div class="card">
+        <h2>Why You're My Favorite Person</h2>
+        <p>🎮 Gamer with main character energy</p>
+        <p>😌 Soft romantic soul</p>
+        <p>😆 Chaotic but in the cutest way</p>
+        <p>🧠 Overthinks but cares deeply</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Stress Relief Mode 💌</h2>
+        <button onclick="comfort()">Click When You're Overthinking</button>
+        <p id="comfortText" class="hidden">
+            Aadarsh…  
+            You don’t have to prove your worth.  
+            You don’t have to carry everything alone.  
+            You are enough.  
+            And if the world feels heavy,  
+            I will hold it with you.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Hidden Love Letter 💖</h2>
+        <button onclick="revealLetter()">Open Secret Message</button>
+        <p id="letter" class="hidden">
+            Jo tum mere ho…  
+            toh mujhe sach mein duniya se kuch nahi chahiye.  
+            Just you. Always you.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<script>
+function start() {
+    document.getElementById("content").classList.remove("hidden");
+}
+
+function comfort() {
+    document.getElementById("comfortText").classList.remove("hidden");
+}
+
+function revealLetter() {
+    document.getElementById("letter").classList.remove("hidden");
+}
+
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 500);
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>Aadarsh's Love Mode 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #140014, #2b002b, #400040);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 80px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff66b2; }
+    to { text-shadow: 0 0 25px #ff3399; }
+}
+
+.subtitle {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+button {
+    background: #ff66b2;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3399;
+    transform: scale(1.05);
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 25px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    color: #ff66b2;
+    animation: float 6s linear infinite;
+    font-size: 20px;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); opacity: 1; }
+    to { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<iframe width="0" height="0" 
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&loop=1&playlist=YOUTUBE_VIDEO_ID"
+frameborder="0" allow="autoplay">
+</iframe>
+
+<div class="section">
+    <h1>🎮 Player Aadarsh Sharma</h1>
+    <p class="subtitle">You’ve unlocked Love Mode 💖</p>
+    <button onclick="start()">Enter</button>
+</div>
+
+<div id="content" class="hidden">
+
+<div class="section">
+    <div class="card">
+        <h2>Why You're My Favorite Person</h2>
+        <p>🎮 Gamer with main character energy</p>
+        <p>😌 Soft romantic soul</p>
+        <p>😆 Chaotic but in the cutest way</p>
+        <p>🧠 Overthinks but cares deeply</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Stress Relief Mode 💌</h2>
+        <button onclick="comfort()">Click When You're Overthinking</button>
+        <p id="comfortText" class="hidden">
+            Aadarsh…  
+            You don’t have to prove your worth.  
+            You don’t have to carry everything alone.  
+            You are enough.  
+            And if the world feels heavy,  
+            I will hold it with you.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+</div>
+
+<div class="section">
+    <div class="card">
+        <h2>Hidden Love Letter 💖</h2>
+        <button onclick="revealLetter()">Open Secret Message</button>
+        <p id="letter" class="hidden">
+            Jo tum mere ho…  
+            toh mujhe sach mein duniya se kuch nahi chahiye.  
+            Just you. Always you.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<script>
+function start() {
+    document.getElementById("content").classList.remove("hidden");
+}
+
+function comfort() {
+    document.getElementById("comfortText").classList.remove("hidden");
+}
+
+function revealLetter() {
+    document.getElementById("letter").classList.remove("hidden");
+}
+
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 500);
+</script>
+
+</body>
+</html>
